@@ -1,0 +1,52 @@
+.table-cell {
+  position: relative;
+  padding: 10px 15px;
+}
+
+.table-cell input[type="text"],
+.table-cell input[type="number"],
+.table-cell select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.table-cell:not(.non-editable-cell) {
+  cursor: pointer;
+}
+
+.table-cell:not(.non-editable-cell):hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.table-cell input[type="checkbox"] {
+  margin: 0;
+  vertical-align: middle;
+  transform: scale(1.2);
+}
+
+.table-cell {
+  padding: 10px 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.table-cell.non-editable-cell {
+  cursor: default;
+}
+
+.table-cell .cell-checkbox-display {
+  pointer-events: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.boolean-cell-wrapper .cell-checkbox-display {
+  pointer-events: none;
+  margin: 0;
+  transform: scale(1.2);
+}
